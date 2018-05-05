@@ -13,8 +13,8 @@ class Connector{
 		$wall,
 		$test;
 	
-	public function __construct(\UKPM\Client $client, bool $isDev = false){
-		$requestHandler = new \UKPM\Request($client, $isDev);	
+	public function __construct(\UKPM\Client $client){
+		$requestHandler = new \UKPM\Request($client);	
 		
 		$this->forces = new Endpoints\Forces($requestHandler);
 		$this->officer = new Endpoints\Officer($requestHandler);

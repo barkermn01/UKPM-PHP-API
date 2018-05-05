@@ -8,11 +8,9 @@ class Request{
 			$guzzle,
 			$client;
 	
-	public function __construct(\UKPM\Client $client,bool  $dev = false) {
+	public function __construct(\UKPM\Client $client) {
 		$hostname = "https://api.ukpolicememorial.com/";
-		if($dev){
-			$hostname = "https://ukpm_api.intortuscs.co.uk/";
-		}
+		
 		$this->guzzle = new Client([
 			'base_uri' => $hostname,
 			'timeout'  => 10.0,
