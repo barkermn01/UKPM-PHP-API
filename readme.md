@@ -2,7 +2,7 @@
 A simple and easy to use class to aid in the validation and testing of a JSON-schema.
 ## How to Install
 ```
-composer require "barkermn01/UKPM-PHP-API"
+composer require "ukpm/UKPM-PHP-API"
 ```
 ## How to use
 ```php
