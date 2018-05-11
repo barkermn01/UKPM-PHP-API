@@ -20,7 +20,7 @@ class Officers extends Base{
 	
 	public function getByDayInMonth(int $day, int $month) {
 		$body = ["day" => $day, "month" => $month];
-		return $this->requestHandler->APICall("officers/force", $body);
+		return $this->requestHandler->APICall("officers/day", $body);
 	}
 	
 }
