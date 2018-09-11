@@ -98,7 +98,7 @@
 					<h1>Intoduction</h1>
 				</a>
 				<p>
-					This is the documentation for UK Police Memorial and outlines out thie use the API Connectors. <br />
+					This is the documentation for UK Police Memorial API Service, it outlines out the use the API Connectors. <br />
 					To use this API you require are public and secret key from the UKPM Trust.
 				</p>
 				<p>
@@ -119,14 +119,14 @@
 					<h1>Connectors</h1>
 				</a>
 				<p>
-					The connectors a set of libraries allowing quick and easy communication with the UKPM API Service.
+					The connectors are a set of libraries allowing quick and easy communication with the UKPM API Service.
 				</p>
 				<div class="connector-php selector php">
 					<a id="connector-php">
 						<h2>PHP Connector</h2>
 					</a>
 					<p>
-						The php connectors is an objective library that can be installed via <a href="https://getcomposer.org/doc/00-intro.md" target="__blank">Composor</a>
+						The php connectors are a objective library that can be installed via <a href="https://getcomposer.org/doc/00-intro.md" target="__blank">Composor</a>
 						<span class="lang">BASH / CMD</span><pre><code class="language-bash">composer require ukpm/php_connector</code></pre>
 					</p>
 					<p>
@@ -134,7 +134,7 @@
 						<span class="lang">PHP</span><pre><code class="language-php">require 'vendor/autoload.php';</code></pre>
 					</p>
 					<p>
-						This then allowes you to use the library
+						This then allows you to use the library
 						<span class="lang">PHP</span><pre><code class="language-php">use UKPM\Connector;
 use UKPM\Client;
 
@@ -146,10 +146,10 @@ $connector = new Connector(new Client($publicKey, $secretKey), true);</code></pr
 				</div>
 				<div class="connector-js selector js">
 					<a id="connector-js">
-						<h2>Javascript Connector</h2>
+						<h2>JavaScript Connector</h2>
 					</a>
 					<p>
-						The javascript connector
+						The JavaScript connector
 						<span class="lang">HTML</span><pre><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="js/ukpm.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="js/sodium.js"&gt;&lt;/script&gt;
@@ -175,7 +175,7 @@ $connector = new Connector(new Client($publicKey, $secretKey), true);</code></pr
 						<a id="method_test">
 							<h2>Test</h2>
 						</a>
-						<p class="description">This is endpoint group is to enable developers to quickly and easily test there connection to the UKPM API Service</p>
+						<p class="description">This endpoint group is to enable developers to quickly and easily test their connection to the UKPM API Service</p>
 						<div class="method_test_test">
 							<a id="method_test_test">
 								<h3>test</h3>
@@ -185,7 +185,7 @@ $connector = new Connector(new Client($publicKey, $secretKey), true);</code></pr
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$output = $connector-&gt;test-&gt;get();
+									<span class="lang php">PHP</span><pre><code class="language-php">$output = $connector-&gt;test-&gt;get();
 print_r($output);</code></pre>
 								</p>
 							</div>
@@ -217,7 +217,7 @@ print_r($output);</code></pre>
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;wall-&gt;get();</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;wall-&gt;get();</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -237,12 +237,12 @@ print_r($output);</code></pre>
 							<a id="method_officer_get">
 								<h3>Get</h3>
 							</a>
-							<p class="description">Provides a officers information and story if it's been created.</p>
+							<p class="description">Provides an officer's information and story if it's exists within the system.</p>
 
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;officer-&gt;get($officer_id);</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;officer-&gt;get($officer_id);</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -267,7 +267,7 @@ print_r($output);</code></pre>
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;ranks-&gt;list();</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;ranks-&gt;list();</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -292,7 +292,7 @@ print_r($output);</code></pre>
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;forces-&gt;list();</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;forces-&gt;list();</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -307,7 +307,7 @@ print_r($output);</code></pre>
 						<a id="method_officers">
 							<h2>Officers</h2>
 						</a>
-						<p class="description">allows access to all officers registered in the system.</p>
+						<p class="description">Allows access to all officers registered in the system.</p>
 						<div class="method_officers_force ">
 							<a id="method_officers_force">
 								<h3>ByForce</h3>
@@ -317,7 +317,7 @@ print_r($output);</code></pre>
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;officers-&gt;getByForce($force_id);</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;officers-&gt;getByForce($force_id);</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -331,12 +331,12 @@ print_r($output);</code></pre>
 							<a id="method_officers_rank">
 								<h3>byRank</h3>
 							</a>
-							<p class="description">Provides a list of all officers that died with the given rank</p>
+							<p class="description">Provides a list of all officers that died within the given rank</p>
 
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;officers-&gt;getByRank($rank_id);</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;officers-&gt;getByRank($rank_id);</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -355,7 +355,7 @@ print_r($output);</code></pre>
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;officers-&gt;getBySearchTerm($searchTerm);</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;officers-&gt;getBySearchTerm($searchTerm);</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
@@ -374,7 +374,7 @@ print_r($output);</code></pre>
 							<div class="selector php">
 								<p>
 									&nbsp;
-									<span class="lang php">php</span><pre><code class="language-php">$connector-&gt;officers-&gt;getByDayInMonth($day, $month);</code></pre>
+									<span class="lang php">PHP</span><pre><code class="language-php">$connector-&gt;officers-&gt;getByDayInMonth($day, $month);</code></pre>
 								</p>
 							</div>
 							<div class="selector js">
