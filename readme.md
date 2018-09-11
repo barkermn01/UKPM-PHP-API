@@ -16,5 +16,9 @@ $secretKey = "";
 
 $connector = new Connector(new Client($publicKey, $secretKey), true);
 ```
+
+# Documentation
+To see the documentation you can open the docs/index.html then use the selector in at the bottom of the left hand navigation to set it to php.
+
 # License
 Licensed under a propriatory lisence this library will only work with people provided with a set of keys
